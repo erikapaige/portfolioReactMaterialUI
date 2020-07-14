@@ -5,11 +5,15 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import AltFooter from './components/AltFooter'
+import Homepage from './pages/Homepage'
+import AboutMe from './pages/AboutMe'
+
 
 
 const App = () => {
   return (
     <div className="App">
+      <Navbar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
