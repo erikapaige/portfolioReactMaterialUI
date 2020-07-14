@@ -13,8 +13,9 @@ import Paper from '@material-ui/core/Paper'
 // formatting for footer
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'inline',
-    flexGrow: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    // flexGrow: 1,
     minHeight: '100vh',
   },
   footer: {
