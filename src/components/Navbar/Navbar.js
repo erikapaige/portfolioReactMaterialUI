@@ -1,12 +1,4 @@
 import React from 'react'
-// router
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-  Link
-} from 'react-router-dom'
 // importing elements from material-ui
 import { makeStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
@@ -26,15 +18,15 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    color: "#000000",
+    color: '#000000',
   },
   title: {
     flexGrow: 1,
-    textAlign:"left",
-    color: "#000000",
+    textAlign:'left',
+    color: '#000000',
   },
   iconRules:{
-    color: "#000000",
+    color: '#000000',
   },
   bar: {
     backgroundColor: '#FFFFFF',
@@ -66,28 +58,25 @@ const Navbar = () => {
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget)
   }
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
 
   const handleClose = () => {
-    setAnchorEl(null);
-  };
+    setAnchorEl(null)
+  }
 
   return(
     <div className={classes.root}>
-      <AppBar position="static" className={classes.bar}>
+      <AppBar position='static' className={classes.bar}>
         <Toolbar>
           <IconButton 
-          edge="start" 
+          edge='start' 
           className={classes.menuButton} 
-          color="inherit" 
-          aria-label="menu"
+          color='inherit' 
+          aria-label='menu'
           onClick={handleMenu}>
             <MenuIcon />
           </IconButton>
           <Menu
-            id="menu-appbar"
+            id='menu-appbar'
             anchorEl={anchorEl}
             anchorOrigin={{
               vertical: 'top',
@@ -107,16 +96,16 @@ const Navbar = () => {
             <MenuItem onClick={handlePortfolioSubmit}>
                 Portfolio
             </MenuItem>
-            <MenuItem onClick={handleClose}>
+            <MenuItem onClick={handleContactSubmit}>
                 Contact
             </MenuItem>
           </Menu>
           <Typography 
-            variant="h6" 
+            variant='h6' 
             className={classes.title}>
             Portfolio
           </Typography>
-          <Button color="inherit">
+          <Button color='inherit'>
             <HomeIcon 
              className={classes.iconRules}
              onClick={handleHomeIconSubmit}/>
