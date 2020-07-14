@@ -1,12 +1,9 @@
 import React from 'react'
-import logo from './logo.svg'
-import './App.css'
 // bring in react router
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect
 } from 'react-router-dom'
 // importing components
 import Navbar from './components/Navbar'
@@ -32,6 +29,9 @@ const App = () => {
           </Route>
           <Route exact path='/portfolio'>
            <Portfolio />
+          </Route>
+          <Route exact path='/contact'>
+            <Contact />
           </Route>
         </Switch>
         {/* <Footer /> */}
