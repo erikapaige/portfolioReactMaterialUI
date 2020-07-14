@@ -21,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor:'#000000',
   },
   eph: {
-    color: '#777777'
+    color: '#777777',
+    fontSize: '15px',
   },
   iconRules:{
     marginTop: '5px',
