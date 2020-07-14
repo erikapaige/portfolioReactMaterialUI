@@ -1,1 +1,1 @@
-export { default } from '../AltFooter/AltFooter.js'
+export { default } from './AltFooter.js'

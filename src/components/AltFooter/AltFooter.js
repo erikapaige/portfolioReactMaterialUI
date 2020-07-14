@@ -8,12 +8,13 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import InstagramIcon from '@material-ui/icons/Instagram'
 import Box from '@material-ui/core/Box'
+import Paper from '@material-ui/core/Paper'
 
 // formatting for footer
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'inline',
-    // flexDirection: 'column',
+    flexGrow: 1,
     minHeight: '100vh',
   },
   footer: {
@@ -22,12 +23,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor:'#000000',
   },
   eph: {
-    color: '#777777',
+    marginTop: '5px',
+    color: '#999999',
     fontSize: '15px',
+    fontWeight:'fontWeightLight',
   },
   iconRules:{
-    marginTop: '5px',
-    margin: '10px',
+    margin: '5px',
     color: '#999999',
   },
 }))
@@ -49,22 +51,50 @@ const handleInstaChange = (event) => {
 const AltFooter = () => {
   const classes = useStyles()
 
+  // function for inline row
+  const FormRow = () => {
+    return (
+      <>
+        <Grid 
+          item xs={4}
+          direction='row'
+          justify='center'
+          alignItems='center'>
+          <Typography
+          className={classes.eph}>
+            Copyright © Erika Paige Handley
+          </Typography>
+        </Grid>
+        <Grid item xs={4}></Grid>
+        <Grid 
+          item xs={4}
+          direction='row'
+          justify='flex-end'
+          alignItems='center'
+          >
+            <LinkedInIcon
+              className={classes.iconRules}
+              onClick={handleLinkedInChange} />
+            <GitHubIcon
+              className={classes.iconRules}
+              onClick={handleGitHubChange} />
+            <InstagramIcon
+              className={classes.iconRules}
+              onClick={handleInstaChange} />
+        </Grid>
+      </>
+    )
+  }
+
   return(
     <footer className={classes.footer}>
-      <Box component="div" display="inline">
-          <Typography variant="h6" component="h2" gutterBottom className={classes.eph}>
-            Erika Paige Handley
-          </Typography>
-          <LinkedInIcon 
-            className={classes.iconRules} 
-            onClick={handleLinkedInChange} />
-          <GitHubIcon 
-            className={classes.iconRules}
-            onClick={handleGitHubChange}/>
-          <InstagramIcon 
-            className={classes.iconRules}
-            onClick={handleInstaChange}/>
-      </Box>
+      <div className={classes.root}>
+        <Grid container spacing={1}>
+          <Grid container item xs={12} spacing={3}>
+            <FormRow />
+          </Grid> 
+        </Grid>
+      </div> 
     </footer>
   )
 }
