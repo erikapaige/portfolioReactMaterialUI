@@ -2,13 +2,10 @@ import React from 'react'
 //material-ui elements 
 import { makeStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
-import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import InstagramIcon from '@material-ui/icons/Instagram'
-import Box from '@material-ui/core/Box'
-import Paper from '@material-ui/core/Paper'
 
 // formatting for footer
 const useStyles = makeStyles((theme) => ({
