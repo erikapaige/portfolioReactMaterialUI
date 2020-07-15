@@ -37,7 +37,8 @@ const useStyles = makeStyles((theme) => ({
   },
   img:{
     height: 'auto',
-    margin: '0%',
+    marginTop: '5px',
+    marginRight: '5px',
   },
   links:{
     color: '#C1C7C9',
