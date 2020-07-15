@@ -14,7 +14,7 @@ import Typography from '@material-ui/core/Typography';
 const styles ={
   background: {
     backgroundImage: 'url(https://wallpaperaccess.com/full/446984.jpg)',
-    height:'100vh',
+    height:'75vh',
   },
 }
 
