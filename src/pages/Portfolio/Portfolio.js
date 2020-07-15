@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
 import PortfolioCard from '../../components/PortfolioCard'
+import BurgerBuzzCard from '../../components/BurgerBuzzCard'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,7 +24,7 @@ const Portfolio = () => {
   return (
     <Grid container spacing={1}>
       <Grid container item xs={12} spacing={3}>
-        <PortfolioCard />
+        <BurgerBuzzCard />
         <PortfolioCard />
       </Grid>
       <Grid container item xs={12} spacing={3}>
