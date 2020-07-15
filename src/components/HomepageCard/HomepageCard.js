@@ -1,16 +1,13 @@
 import React from 'react'
 import './HomepageCard.css'
 // import elements from material-ui
-import { makeStyles, createMuiTheme, responsiveFontSizes, ThemeProvider, useTheme } from '@material-ui/core/styles'
-import CssBaseline from '@material-ui/core/CssBaseline'
+import { makeStyles, createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
-import Paper from '@material-ui/core/Paper'
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import Card from '@material-ui/core/Card'
+import CardContent from '@material-ui/core/CardContent'
+import Typography from '@material-ui/core/Typography'
 
+// formatting for background image
 const styles ={
   background: {
     backgroundImage: 'url(https://wallpaperaccess.com/full/446984.jpg)',
@@ -18,6 +15,7 @@ const styles ={
   },
 }
 
+// formatting for card
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
@@ -29,7 +27,7 @@ const useStyles = makeStyles({
   text: {
     padding: '50px',
   },
-});
+})
 
 // makes typography mobile responsive
 let theme = createMuiTheme()
@@ -41,29 +39,29 @@ const HomepageCard = () => {
 
   return (
     <ThemeProvider theme={theme}>
-    <div className="background">
+    <div className='background'>
       <Grid 
         className={classes.text}
         item xs={12}
         container
-        direction="column"
-        justify="center"
-        alignItems="center"
+        direction='column'
+        justify='center'
+        alignItems='center'
       >
         <Card className={classes.root}>
           <CardContent>
-            <Typography className={classes.title} color="textSecondary" gutterBottom>
+            <Typography className={classes.title} color='textSecondary' gutterBottom>
               Web Developer
             </Typography>
-            <Typography variant="h5" component="h2">
+            <Typography variant='h5' component='h2'>
               Erika Paige Handley
             </Typography>
             <br />
-            <Typography variant="body2" component="p">
+            <Typography variant='body2' component='p'>
               Front and back end web developer, freelance creative inspired by challenge. Recent graduate of University of California Irvine's full stack web development 12-week coding bootcamp.
             </Typography>
             <br />
-            <Typography variant="body2" component="p">
+            <Typography variant='body2' component='p'>
               Skilled include: HTML, CSS, Javascript, React, MySql, and Mongo.
             </Typography>
           </CardContent>
