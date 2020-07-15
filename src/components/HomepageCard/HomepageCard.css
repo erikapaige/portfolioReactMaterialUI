@@ -1,0 +1,9 @@
+.background {
+  background-image: url("https://wallpaperaccess.com/full/446984.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 100%;
+}

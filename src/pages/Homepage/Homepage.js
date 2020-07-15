@@ -3,8 +3,9 @@ import HomepageCard from '../../components/HomepageCard'
 
 const Homepage = () => {
   return (
-    <h1>Homepage</h1>
-    <HomepageCard />
+    <>
+     <HomepageCard />
+    </>
   )
 }
 export default Homepage
