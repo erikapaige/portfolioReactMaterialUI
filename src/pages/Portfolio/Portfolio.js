@@ -4,7 +4,8 @@ import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
 import PortfolioCard from '../../components/PortfolioCard'
 import BurgerBuzzCard from '../../components/BurgerBuzzCard'
-import BudgetTracker from '../../components/BudgetTrackerCard'
+import ProgressiveBudgetCard from '../../components/ProgressiveBudgetCard'
+import ListivityCard from '../../components/ListivityCard'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,8 +26,12 @@ const Portfolio = () => {
   return (
     <Grid container spacing={1}>
       <Grid container item xs={12} spacing={3}>
+        <ListivityCard />
+        <PortfolioCard />
+      </Grid>
+      <Grid container item xs={12} spacing={3}>
         <BurgerBuzzCard />
-        <BudgetTracker />
+        <ProgressiveBudgetCard />
       </Grid>
       <Grid container item xs={12} spacing={3}>
         <PortfolioCard />

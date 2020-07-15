@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 // import PropTypes from 'prop-types'
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles'
 import { makeStyles } from '@material-ui/core/styles'
@@ -6,10 +7,13 @@ import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
+import CardActionArea from '@material-ui/core/CardActionArea'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import Hidden from '@material-ui/core/Hidden'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 
 // formatting for footer
@@ -48,13 +52,13 @@ theme = responsiveFontSizes(theme)
 
 // functions for onClick events
 const handleAppSubmit = (event) => {
-  window.location.href ='https://nameless-mesa-29263.herokuapp.com/'
+  window.location.href ='https://radiant-woodland-54871.herokuapp.com/'
 }
 const handleRepoSubmit = (event) => {
-  window.location.href = 'https://github.com/erikapaige/progressiveBudget'
+  window.location.href = 'https://github.com/ShaneMit/Project2'
 }
 // portfolio card
-const BudgetTracker = () => {
+const ListivityCard = () => {
   const classes = useStyles()
 
   return (
@@ -68,36 +72,36 @@ const BudgetTracker = () => {
               className={classes.titleTxt}
               component='h2' 
               variant='h5'>
-              Progressive Budget Tracker
+              Listivity
             </Typography>
             <Typography 
               className={classes.txt}
               variant='subtitle1' 
               color='textSecondary'>
               Primary Technologies:
-              <ListItemText> - (Node) Express</ListItemText>
-              <ListItemText> - Mongo </ListItemText>
-              <ListItemText> -Node.js </ListItemText>
+              <ListItemText> - MySql</ListItemText>
+              <ListItemText> - DotEnv</ListItemText>
+              <ListItemText> - Express</ListItemText>
             </Typography>
             <Typography 
               className={classes.txt}
               variant='subtitle1' 
               paragraph>
-                  Description of project: The 'Budget Tracker' allows users to track expenses and deposits. The application is available to users with or without data/internet connection. If a user is offline, their entries are stored and the application is updated once a connection exists. This functionality enables users to track their expenses and receive their most up to date balance regardless of connection. 
+                  Description of project: Listivity is an application that tracks social activity ideas into three categories: Activities, Dining and Entertain. When a user submits their inputs, their data is stored in a MYSQL database and retrieved the next time they log into their account. Each activity can be edited and deleted. Additionally, users are able to click the "shuffle" button. The site will sort through the user's stored data and present them with an activity. 
             </Typography>
             <Grid
               container
-              direction='row'
-              justify='space-evenly'
-              alignItems='center'>
+              direction="row"
+              justify="space-evenly"
+              alignItems="center">
               <CardActions>
                 <Button 
-                  size='small'
+                  size="small"
                   className={classes.links}
                   onClick={handleAppSubmit}>View App
                 </Button>
                 <Button
-                  size='small'
+                  size="small"
                   className={classes.links}
                   onClick={handleRepoSubmit}>View Repo
                 </Button>
@@ -109,7 +113,7 @@ const BudgetTracker = () => {
           <CardMedia>
             <img
               className={classes.img}
-              src='./imgs/BudgetTrackerSm.png'
+              src='./imgs/ListivitySm.png'
               alt='fitness tracker' /> 
           </CardMedia>
         </Hidden>
@@ -120,4 +124,4 @@ const BudgetTracker = () => {
   )
 }
 
-export default BudgetTracker
+export default ListivityCard
