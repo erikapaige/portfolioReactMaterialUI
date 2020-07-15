@@ -19,7 +19,7 @@ const styles ={
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
-    width: '25%',
+    width: '35%',
   },
   title: {
     fontSize: 14,
@@ -58,11 +58,14 @@ const HomepageCard = () => {
             </Typography>
             <br />
             <Typography variant='body2' component='p'>
-              Front and back end web developer, freelance creative inspired by challenge. Recent graduate of University of California Irvine's full stack web development 12-week coding bootcamp.
+                Freelance fashion creative looking to implement recently acquired skills in full stack web development to communicate a brand’s story. A 2020 graduate from University of California Irvine's (UCI) 12-week full stack web development bootcamp with technical skills in modern web technologies. Motivated by a challenge I know how to work collaboratively to solve problems to produce quality results that are delivered on time.
             </Typography>
             <br />
             <Typography variant='body2' component='p'>
-              Skilled include: HTML, CSS, Javascript, React, MySql, and Mongo.
+              Skilled in the following technologies: 
+              <br>
+              </br>
+              HTML, CSS, Javascript, React, MySql, and Mongo.
             </Typography>
           </CardContent>
         </Card>
