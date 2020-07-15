@@ -48,13 +48,13 @@ theme = responsiveFontSizes(theme)
 
 // functions for onClick events
 const handleAppSubmit = (event) => {
-  window.location.href ='https://fierce-chamber-18329.herokuapp.com/'
+  window.location.href ='http://dewey.works/'
 }
 const handleRepoSubmit = (event) => {
-  window.location.href = 'https://github.com/erikapaige/burger'
+  window.location.href = 'https://github.com/usrs/Dewey'
 }
 // portfolio card
-const BurgerBuzzCard = () => {
+const DeweyCard = () => {
   const classes = useStyles()
 
   return (
@@ -68,27 +68,27 @@ const BurgerBuzzCard = () => {
               className={classes.titleTxt}
               component='h2' 
               variant='h5'>
-              The Buzz About Burgers
+              Dewey: Your Personal Library
             </Typography>
             <Typography 
               className={classes.txt}
-              variant='subtitle1'>
+              variant='subtitle1' 
+              color='textSecondary'>
               Primary Technologies:
-              <ListItemText> - MySql</ListItemText>
-              <ListItemText> - Express Handlebars</ListItemText>
-              <ListItemText> - (Node) Express</ListItemText>
+              <ListItemText> - React </ListItemText>
+              <ListItemText> - Mongo </ListItemText>
+              <ListItemText> - Passport </ListItemText>
             </Typography>
             <Typography 
               className={classes.txt}
               variant='subtitle1' 
               paragraph>
-                Description of Project: The Buzz About Burgers is a restaurant application that allows users to input the name of burgers they would like to eat. When a user submits a burger it will display on the left side of the screen, waiting to be devoured. When the user clicks the "Devour" button; the burger moves to the other side of the page. Each burger submitted is stored in a MySql database.
+                Description of project: Using the OpenLibrary api, Dewey is able to create and store an online personal library. Books can be searched by title or ISBN and saved to a user's 'library.' The saved books can be viewed on the user's profile page, their digital bookshelf. At the bookshelf, a user can 'loan' a book to a friend. Once entering the friend's information, the book will move from their library shelf to the 'loaned book' shelf.
             </Typography>
             <Grid
               container
-              item xs={12} md={12} lg={12}
               direction="row"
-              justify="center"
+              justify="space-evenly"
               alignItems="center">
               <CardActions>
                 <Button 
@@ -109,8 +109,8 @@ const BurgerBuzzCard = () => {
           <CardMedia>
             <img
               className={classes.img}
-              src='./imgs/burgerBuzzSm.png'
-              alt='burger application' /> 
+              src='./imgs/DeweySm.png'
+              alt='fitness tracker' /> 
           </CardMedia>
         </Hidden>
       </Card>
@@ -120,4 +120,4 @@ const BurgerBuzzCard = () => {
   )
 }
 
-export default BurgerBuzzCard
+export default DeweyCard

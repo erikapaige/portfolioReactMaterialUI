@@ -1,33 +1,20 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-import Paper from '@material-ui/core/Paper'
+// material-ui elements
 import Grid from '@material-ui/core/Grid'
 import PortfolioCard from '../../components/PortfolioCard'
 import BurgerBuzzCard from '../../components/BurgerBuzzCard'
 import ProgressiveBudgetCard from '../../components/ProgressiveBudgetCard'
 import ListivityCard from '../../components/ListivityCard'
+import DeweyCard from '../../components/DeweyCard'
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  border: {
-    marginTop: '15px',
-  },
-  card: {
-    marginLeft: '10px',
-    marginRight: '10px',
-  },
-}))
 
 const Portfolio = () => {
-  const classes = useStyles()
   
   return (
     <Grid container spacing={1}>
       <Grid container item xs={12} spacing={3}>
+        <DeweyCard />
         <ListivityCard />
-        <PortfolioCard />
       </Grid>
       <Grid container item xs={12} spacing={3}>
         <BurgerBuzzCard />
