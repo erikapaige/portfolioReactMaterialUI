@@ -8,6 +8,7 @@ import ProgressiveBudgetCard from '../../components/ProgressiveBudgetCard'
 import ListivityCard from '../../components/ListivityCard'
 import DeweyCard from '../../components/DeweyCard'
 import LittleGemCard from '../../components/LittleGemCard'
+import FitnessTrackerCard from '../../components/FitnessTrackerCard'
 
 
 const Portfolio = () => {
@@ -19,7 +20,7 @@ const Portfolio = () => {
         <ListivityCard />
       </Grid>
       <Grid container item xs={12} spacing={3}>
-        <PortfolioCard />
+        <FitnessTrackerCard />
         <ProgressiveBudgetCard />
       </Grid>
       <Grid container item xs={12} spacing={3}>
