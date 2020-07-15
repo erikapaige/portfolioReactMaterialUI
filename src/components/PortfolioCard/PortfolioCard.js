@@ -28,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
   },
   CardMedia: {
     width: 160,
-
   },
   titleTxt:{
     color: '#F2F3F4',
