@@ -109,7 +109,7 @@ const ProgressiveBudgetCard = () => {
           <CardMedia>
             <img
               className={classes.img}
-              src='./imgs/ProgressiveBudgetCardSm.png'
+              src='./imgs/ProgressiveBudgetSm.png'
               alt='fitness tracker' /> 
           </CardMedia>
         </Hidden>
