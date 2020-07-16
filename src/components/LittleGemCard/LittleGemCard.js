@@ -83,7 +83,7 @@ const LittleGemCard = () => {
               className={classes.txt}
               variant='subtitle1' 
               paragraph>
-                  Description of project: Apps like Yelp, Google, Uber Eats, and Door Dash have revolutionized the way we explore restaurants, but many times these apps overlook small local restaurants that may have great ratings but lack reviews. Little Gems shines a spot light on these places by providing users with recommendations of 4-star rated restaurants (that lack reviews) in their area.
+                  Description of project: Apps like Yelp, Google, Uber Eats, and Door Dash have revolutionized the way we explore restaurants, but many times these apps overlook small local restaurants that may have great ratings but lack reviews. Little Gems shines a spotlight on these places by providing users with recommendations of 4-star rated restaurants (that lack reviews) in their area.
             </Typography>
             <Grid
               container
