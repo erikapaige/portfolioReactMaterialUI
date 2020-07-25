@@ -78,12 +78,13 @@ const FitnessTrackerCard = () => {
               <ListItemText> - Mongo Database </ListItemText>
               <ListItemText> - Mongoose schema </ListItemText>
               <ListItemText> - Express </ListItemText>
+              <ListItemText> - DotEnv </ListItemText>
             </Typography>
             <Typography 
               className={classes.txt}
               variant='subtitle1' 
               paragraph>
-                  Description of project: The 'Workout Tracker' application allows users to view create and track daily workouts. A user can track the name, type, weight, sets, reps and duration of the exercise. As a user tracks their fitness data, they can see their exercises combined on the 'stats.'
+                  Description of project: The 'Workout Tracker' application allows users to view create and track daily workouts. A user can track the name, type, weight, sets, reps and duration of the exercise. At the beginning of each session a user can decide to 'Continue Workout' or select 'New Workout.' As a user tracks their fitness data, they can see their exercises combined on the 'stats.'
             </Typography>
             <Grid
               container
