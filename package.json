@@ -1,6 +1,7 @@
 {
   "name": "materialuiportfolio",
   "version": "0.1.0",
+  "homepage": "https://erikapaige.github.io/portfolioReactMaterialUI/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -37,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.1.0",
+    "gh-pages-deploy": "^0.5.1"
   }
 }
